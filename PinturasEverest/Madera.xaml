@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinturasEverest.Madera">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="#2196F3" Padding="24" Margin="0" HorizontalOptions="FillAndExpand">
+            <Button Text="&#xf015;" FontSize="25" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" HorizontalOptions="StartAndExpand" Clicked="Home_Clicked" />
+            <Image Source="logo.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="60"/>
+            <Button Text="&#xf049;" FontSize="25" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" HorizontalOptions="EndAndExpand" Clicked="Back_Clicked" />
+        </StackLayout>
+        <ScrollView VerticalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                    <RowDefinition Height="57"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="LINEA" Grid.Row="0" Grid.Column="0"  FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" TextColor="DarkBlue"  FontAttributes="Bold"/>
+                <Button Text="Acabados Para Madera" Grid.Row="1" Grid.Column="0" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="ListaMad_Clicked"/>
+            </Grid>
+            </StackLayout>
+        </ScrollView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" Margin="0" HorizontalOptions="FillAndExpand">
+            <Button Text="CALCULADORA" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray" CornerRadius="5" Padding="5" Margin="5" Clicked="Calculadora_Clicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

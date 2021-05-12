@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinturasEverest.MainPage">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="#2196F3" Padding="24" Margin="0" HorizontalOptions="FillAndExpand">
+            <Image Source="logo.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="60"/>
+        </StackLayout>
+        <ScrollView VerticalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="front.jpg" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,-5,0,0"/>
+                <Button Text="CAUCHO HOGAR" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="Caucho_Clicked"/>
+                <Button Text="ESMALTE HOGAR" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="Esmaltes_Clicked"/>
+                <Button Text="INDUSTRIAL" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="Industrial_Clicked"/>
+                <Button Text="MADERA" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="Madera_Clicked"/>
+                <Button Text="AUTOMOTRIZ" FontSize="Large" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="DarkBlue" CornerRadius="5" Padding="5" Margin="5" Clicked="Autos_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="LightGray" Margin="0" HorizontalOptions="FillAndExpand">
+            <Button Text="&#xf167;" FontSize="Large" FontFamily="{StaticResource FontAwesomeBrands}" TextColor="DarkGray" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Clicked="YouTube_Clicked"/>
+            <Button Text="&#xf082;" FontSize="Large" FontFamily="{StaticResource FontAwesomeBrands}" TextColor="DarkGray" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Clicked="Facebook_Clicked"/>
+            <Button Text="&#xf16d;" FontSize="Large" FontFamily="{StaticResource FontAwesomeBrands}" TextColor="DarkGray" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Clicked="Instagram_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

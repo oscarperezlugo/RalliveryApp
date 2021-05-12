@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:PinturasEverest"
+             x:Class="PinturasEverest.Listas">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:PantoneConverter x:Key="Pantone" />
+        </ResourceDictionary>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="#2196F3" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="#2196F3" Padding="24" Margin="0" HorizontalOptions="FillAndExpand">
+            <Button Text="&#xf015;" FontSize="25" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" HorizontalOptions="StartAndExpand" Clicked="Home_Clicked" />
+            <Image Source="logo.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="60"/>
+            <Button Text="&#xf049;" FontSize="25" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" HorizontalOptions="EndAndExpand" Clicked="Back_Clicked" />
+        </StackLayout>
+        <ScrollView VerticalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <CollectionView x:Name="ListaColores" Margin="5,0,5,0" SelectionMode="Single" SelectionChanged="ListaColores_SelectionChanged">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="5"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="80"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{Binding Color, Converter={StaticResource Pantone}}"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                                <Label Text="{Binding Nombre}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold"/>
+                                <Label Text="{Binding Codigo}" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
