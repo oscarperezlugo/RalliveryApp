@@ -49,3 +49,4 @@ C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest\bin\Debug\netstandard2.
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest\bin\Debug\netstandard2.0\ref\PinturasEverest.dll
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest\bin\Debug\netstandard2.0\PinturasEverest.pdb
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest\obj\Debug\netstandard2.0\Registro1.xaml.g.cs

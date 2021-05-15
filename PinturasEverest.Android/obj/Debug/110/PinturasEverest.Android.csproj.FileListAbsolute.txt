@@ -1169,3 +1169,4 @@ C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.Android\obj\Debug\110\s
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.Android\obj\Debug\110\android\src\crc64b1fe4ba0b0d1ee62\CustomEntryRenderer.java
+C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.Android\obj\Debug\110\res\drawable\miniblanco.png

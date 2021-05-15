@@ -100,3 +100,6 @@ C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\PinturasEverest.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Entitlements.plist.NoneOutput.stamp
 C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp
+C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\miniblanco.png.ResolveUTIs.stamp
+C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\miniblanco1.png.ResolveUTIs.stamp
+C:\Users\oscar\source\repos\RalliveryApp\PinturasEverest.iOS\obj\iPhoneSimulator\Debug\miniblanco2.png.ResolveUTIs.stamp

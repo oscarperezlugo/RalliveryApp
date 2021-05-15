@@ -29,7 +29,7 @@
             <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="Transparent" Padding="24" Margin="0" HorizontalOptions="FillAndExpand">
                 <Image  VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="20"/>
             </StackLayout>
-            <Frame CornerRadius="30" IsClippedToBounds="True" Margin="0" Padding="0" HasShadow="False">
+            <Frame CornerRadius="30" IsClippedToBounds="True" Margin="0" Padding="0" HasShadow="True">
             <ScrollView VerticalOptions="CenterAndExpand">
                 <StackLayout VerticalOptions="CenterAndExpand" BackgroundColor="White">
                         <Grid BackgroundColor="Transparent">
@@ -40,22 +40,22 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="55"/>
+                                <RowDefinition Height="25"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Label Text="Registrati o Accedi" TextColor="#A5C739" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="Title" Padding="5" FontFamily="Poppins"/>
-                            <Frame CornerRadius="30" IsClippedToBounds="True" Grid.Row="1" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="1" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
                                 <Entry BackgroundColor="#F3F3F3" Placeholder="  Email" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" Keyboard="Email" Margin="0" Style="{StaticResource EntryStyle}"/>
                             </Frame>
-                            <Frame CornerRadius="30" IsClippedToBounds="True" Grid.Row="2" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="2" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
                                 <Entry BackgroundColor="#F3F3F3" Placeholder="  Password" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" IsPassword="True" Margin="0" Style="{StaticResource EntryStyle}"/>
                             </Frame>
                             <Label Text="Hai dimenticato la tua password?" TextColor="#606060" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" Padding="5" FontFamily="Poppins" TextDecorations="Underline"/>
-                            <Button Grid.Row="4" Text="Accedi" TextColor="White" BackgroundColor="#A5C739" Margin="50,5,50,5" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" FontAttributes="Bold" FontSize="Medium" FontFamily="Poppins" CornerRadius="30"/>
+                            <Button Grid.Row="4" Text="Accedi" TextColor="White" BackgroundColor="#A5C739" Margin="50,5,50,5" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" FontAttributes="Bold" FontSize="Medium" FontFamily="Poppins" CornerRadius="10"/>
                             <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="5" Margin="10">
                                 <Label.FormattedText>
                                     <FormattedString>
@@ -87,7 +87,7 @@
             </ScrollView>
             </Frame>
             <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="Transparent" Margin="0" HorizontalOptions="FillAndExpand">
-                <Image  VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="20"/>
+                <Image Source="miniblanco" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="20"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

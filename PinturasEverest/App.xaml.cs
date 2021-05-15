@@ -10,7 +10,7 @@ namespace PinturasEverest
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new Registro1();
         }
 
         protected override void OnStart()

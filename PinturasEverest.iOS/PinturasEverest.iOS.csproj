@@ -108,6 +108,18 @@
     <ImageAsset Include="Assets.xcassets\aqua.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miniblanco.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miniblanco.imageset\miniblanco.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miniblanco.imageset\miniblanco1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miniblanco.imageset\miniblanco2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\splash.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>

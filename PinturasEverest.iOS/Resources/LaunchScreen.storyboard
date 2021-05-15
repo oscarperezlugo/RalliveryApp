@@ -21,7 +21,7 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="165" green="199" blue="57" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.65" green="0.78" blue="0.22" alpha="1f" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
                             <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>

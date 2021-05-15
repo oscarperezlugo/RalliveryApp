@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinturasEverest.Registro1">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="LightGreenColor">#2FA999</Color>
+            <Color x:Key="BorderColor">#D8D8D8</Color>
+
+            <Style x:Key="LableStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#666666" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+            </Style>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="HeightRequest" Value="40"></Setter>
+                <Setter Property="Margin" Value="5,0,0,0"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#A5C739">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="Transparent" Padding="24" Margin="0,0,0,-30" HorizontalOptions="FillAndExpand">
+                <Image  VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="15"/>
+            </StackLayout>
+            <Frame CornerRadius="30" IsClippedToBounds="True" Margin="0" Padding="0" HasShadow="true">
+                <ScrollView VerticalOptions="CenterAndExpand">
+                    <StackLayout VerticalOptions="CenterAndExpand" BackgroundColor="White">
+                        <Grid BackgroundColor="Transparent">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="55"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Registrati" TextColor="#A5C739" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="Title" Padding="5" FontFamily="Poppins"/>
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="1" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                                <Entry BackgroundColor="#F3F3F3" Placeholder="  Nome e Cognome" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" Keyboard="Email" Margin="0" Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="2" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                                <Entry BackgroundColor="#F3F3F3" Placeholder="  Numero di Telefono" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" Keyboard="Email" Margin="0" Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="3" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                                <Entry BackgroundColor="#F3F3F3" Placeholder="  Email" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" Keyboard="Email" Margin="0" Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="4" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                                <Entry BackgroundColor="#F3F3F3" Placeholder="  Password" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" Keyboard="Email" Margin="0" Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+                            <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="5" HasShadow="False" Style="{StaticResource FrameStyle}" Margin="50,5,50,5" BackgroundColor="#F3F3F3" BorderColor="Transparent">
+                                <Entry BackgroundColor="#F3F3F3" Placeholder="  Conferma password" TextColor="#606060" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  FontFamily="Poppins" IsPassword="True" Margin="0" Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+                            <Label Text="Hai dimenticato la tua password?" TextColor="#606060" Grid.Row="6" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" Padding="5" FontFamily="Poppins" TextDecorations="Underline"/>
+                            <Button Grid.Row="7" Text="Avanti" TextColor="White" BackgroundColor="#A5C739" Margin="50,5,50,5" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" FontAttributes="Bold" FontSize="Medium" FontFamily="Poppins" CornerRadius="10"/>
+                            <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="8" Margin="10">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Hai già il tuo account?" TextColor="#606060" FontAttributes="Bold" FontSize="Medium"  FontFamily="Roboto"/>
+                                        <Span Text=" Accedi" TextColor="#A5C739"   FontAttributes="Bold" FontSize="Medium"  FontFamily="Roboto"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="9" Margin="1">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Proseguendo  si dà il consenso ai" TextColor="#606060" FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                        <Span Text=" Termini e condizioni" TextColor="#A5C739"   FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Grid.Row="10" Margin="1" HorizontalTextAlignment="Center">
+                                <Label.FormattedText >
+                                    <FormattedString>
+                                        <Span Text="Inoltre si prega di controllare la nostra" TextColor="#606060" FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                        <Span Text=" Privacy Policy" TextColor="#A5C739"   FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                        <Span Text=" e" TextColor="#606060" FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                        <Span Text=" Cookie Policy" TextColor="#A5C739"   FontAttributes="Bold" FontSize="Small"  FontFamily="Roboto"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="Transparent" Margin="0" HorizontalOptions="FillAndExpand">
+                <Image  VerticalOptions="Center" HorizontalOptions="CenterAndExpand" HeightRequest="20"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
